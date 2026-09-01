@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Reporte Urbano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+</head>
+<body>
+    <header>
+        <h1>Reporte Urbano</h1>
+        <p>Ayúdanos a mejorar tu ciudad</p>
+    </header>
+
+    <main>
+        <section id="report-form-container">
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="report-type">Tipo de Reporte</label>
+                    <select id="report-type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="luminaria">Falla de Luminaria</option>
+                        <option value="bache">Bache en Vialidad</option>
+                        <option value="basura">Acumulación de Basura</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Ubicación / Dirección</label>
+                    <input type="text" id="location" placeholder="Ej. Calle Juárez #123" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" rows="4" placeholder="Describe el problema..." required></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">Enviar Reporte</button>
+            </form>
+        </section>
+
+        <section id="status-container" class="hidden">
+            <div class="status-card">
+                <p id="status-message"></p>
+                <button id="back-btn">Volver</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Reportes Urbanos</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
