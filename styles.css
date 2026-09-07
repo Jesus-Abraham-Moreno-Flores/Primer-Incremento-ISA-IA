@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2c3e50;
-    --accent-color: #3498db;
+    --accent-color: #1a5276;
     --bg-color: #f4f7f6;
     --text-color: #333;
     --white: #ffffff;
@@ -101,7 +101,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #15435d;
 }
 
 .hidden {
@@ -121,7 +121,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
-    color: #777;
+    color: #555;
 }
 
 @media (max-width: 480px) {
